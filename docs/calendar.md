@@ -5,7 +5,7 @@
 - Project requirements publication: 2025-09-15 (start of week 2).
 - Project delivery - first phase: 2025-10-19 (end of week 6).
 - Project presentations - first phase: between 2025-10-20 and 2025-10-24 (week 7).
-- Project delivery - final: 2025-11-30 (end of week 13).
+- Project delivery - final: 2025-12-07 (end of week 13).
 - Project presentations and evaluations/discussions - final: between 2025-12-08 and 2023-12-19 (weeks 14 to 15).
 
 ## Tentative weekly planning
