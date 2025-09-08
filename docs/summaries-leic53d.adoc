@@ -1,2 +1,26 @@
 = Summaries LEIC53D
 :toc:
+
+== Lecture 1 - 2025-09-08
+
+* link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/00-course-introduction.adoc[Course introduction].
+    ** Goals.
+    ** Weekly planning - https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/calendar.md.
+    ** Evaluation - https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/evaluation.md.
+    ** Resources - https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/resources.md.
+* Introduction to the Inversion of Control design technique and the Spring Framework Context
+    ** Classes as holders of functions.
+    ** Breaking down an application into multiple components.
+    ** The Inversion of control principal, in which a components receives what it needs to operate and is not responsible for its instantiation.
+    ** Dependencies and dependency injection via constructors.
+    ** The Spring context container.
+        *** Type registration.
+        *** Component scanning.
+        *** _Bean_ functions.
+    ** Example: 
+     *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-context/src/main/kotlin/pt/isel/daw/sketches/leic53d/lecture1
+     *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-context/src/test/kotlin/pt/isel/daw/sketches/leic53d/lecture1
+
+* Additional resources
+    ** https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/01-course-tooling.adoc
+    ** https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/0-jvm-development-environment.adoc
