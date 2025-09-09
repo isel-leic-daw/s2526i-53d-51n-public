@@ -1,2 +1,11 @@
 = Summaries LEIC51N
 :toc:
+
+== Lecture 1 - 2025-09-08
+
+* link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/00-course-introduction.adoc[Course introduction].
+    ** Goals.
+    ** Weekly planning - https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/calendar.md.
+    ** Evaluation - https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/evaluation.md.
+    ** Resources - https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/resources.md.
+
