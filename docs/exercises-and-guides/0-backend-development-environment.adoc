@@ -22,7 +22,7 @@ git clone git@github.com:isel-leic-daw/s2526i-53d-51n-public.git
 
 [source, bash]
 ----
-cd s2425i-51d-51n-public/code/jvm/spring-context
+cd s2526i-53d-51n-public/code/jvm/spring-context
 ----
 
 * Run the `check` task, which
