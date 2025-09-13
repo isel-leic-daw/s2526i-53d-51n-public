@@ -21,6 +21,8 @@ The system should also support _frontend components_ running on different platfo
 
 ## Requirements
 
+The project requirements are based on Option C of the Mobile Devices Programming [Practical Assignment](https://github.com/isel-leic-pdm/2526i/blob/main/assignments/PDM-2526-1_Option_C.pdf).
+
 ### Users and authentication
 
 The system will be used by multiple users, requiring user authentication for most of the provided functionalities.
