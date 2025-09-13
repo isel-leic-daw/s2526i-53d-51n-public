@@ -1,13 +1,11 @@
-package pt.isel.daw.e0.intro.step3
+package pt.isel.daw.e0.intro.step4
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean
+import org.springframework.stereotype.Component
 import pt.isel.daw.e0.intro.HashFunctionSupplier
 import pt.isel.daw.e0.intro.PlainTextPassword
 import pt.isel.daw.e0.intro.UserId
-import pt.isel.daw.e0.intro.step2.InMemoryPasswordStorage
-import pt.isel.daw.e0.intro.step2.PasswordService
-import pt.isel.daw.e0.intro.step2.UnsecureHashBasedPasswordTransformer
 import java.security.MessageDigest
 import kotlin.test.Test
 import kotlin.test.assertFalse
@@ -42,6 +40,7 @@ class PasswordServiceTests {
     }
 
     companion object {
+        @Component
         class BeanProvider {
             @Bean
             fun hashFunctionSupplier() = HashFunctionSupplier {
@@ -50,13 +49,9 @@ class PasswordServiceTests {
         }
 
         fun compose(): PasswordService {
-            val context = AnnotationConfigApplicationContext(
-                PasswordService::class.java,
-                UnsecureHashBasedPasswordTransformer::class.java,
-                InMemoryPasswordStorage::class.java,
-                BeanProvider::class.java,
-            )
-
+            val context = AnnotationConfigApplicationContext()
+            context.scan("pt.isel.daw.e0.intro.step4")
+            context.refresh()
             return context.getBean(PasswordService::class.java)
         }
     }

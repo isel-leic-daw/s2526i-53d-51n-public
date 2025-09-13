@@ -34,7 +34,6 @@ fun main() {
 
     log.info("Create context.")
     val context = AnnotationConfigApplicationContext()
-
     log.info("Component scan and refresh")
     context.scan("pt.isel.daw.e3")
     context.refresh()
@@ -42,12 +41,13 @@ fun main() {
     log.info("Obtain `Translator instance`")
     val translator = context.getBean<Translator>()
 
-    println(translator.translate("Hello", "pt"))
-    println(translator.translate("Hello", "es"))
-    println(translator.translate("Hello", "sv"))
-    println(translator.translate("Hello", "fr"))
-    println(translator.translate("Hello", "de"))
-
+    log.info(translator.translate("Hello", "pt"))
+    log.info(translator.translate("Hello", "es"))
+    log.info(translator.translate("Hello", "sv"))
+    log.info(translator.translate("Hello", "fr"))
+    log.info(translator.translate("Hello", "de"))
+    log.info(translator.translate("hello", "zh-CN"))
+    log.info(translator.translate("hello", "it"))
     /*
      * Conclusions:
      * - Adding a new translator only requires adding a class implementing the `LanguageTranslator` interface

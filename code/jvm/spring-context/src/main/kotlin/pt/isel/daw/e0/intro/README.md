@@ -15,3 +15,7 @@ divided in multiple steps
 * Step 3
   * Only in tests. No changes in the `main` code.
   * Using the Spring Context container for the composition.
+
+* Step 4
+    * `main` code: adds `@Component` annotation to some classes
+    * Using component scanning with the Spring Context container.
