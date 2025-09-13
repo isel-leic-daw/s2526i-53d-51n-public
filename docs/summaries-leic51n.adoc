@@ -9,3 +9,26 @@
     ** Evaluation - https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/evaluation.md.
     ** Resources - https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/resources.md.
 
+== Lecture 2 - 2025-09-11
+
+* Introduction to the Inversion of Control design technique and the Spring Framework Context
+    ** Classes as holders of functions.
+    ** Breaking down an application into multiple components.
+    ** The Inversion of control principal, in which a components receives what it needs to operate and is not responsible for its instantiation.
+    ** Dependencies and dependency injection via constructors.
+    ** The Spring context container.
+        *** Type registration.
+        *** Component scanning.
+        *** _Bean_ functions.
+
+* Lab guide to ensure the required development environment is present in the student's machines.
+
+* Resources:
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/02-inversion-of-control-and-dependency-injection.adoc[Inversion of control and dependency injection] lecture note.
+    ** Code examples developed during the lecture
+        *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/code/jvm/spring-context/src/main/kotlin/pt/isel/daw/sketches/leic51n/lecture2/PasswordService.kt
+        *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/code/jvm/spring-context/src/test/kotlin/pt/isel/daw/sketches/leic51n/lecture2/PasswordServiceTests.kt
+    ** Other examples
+        *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-context/src/main/kotlin/pt/isel/daw
+    ** Lab guide
+        *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/0-backend-development-environment.adoc

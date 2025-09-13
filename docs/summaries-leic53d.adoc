@@ -24,3 +24,19 @@
 * Additional resources
     ** https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/01-course-tooling.adoc
     ** https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/0-jvm-development-environment.adoc
+
+== Lecture 2 - 2025-09-11
+
+* Continuation of the previous lecture about the inversion of control technique and dependency injection containers.
+
+* Lab guide to ensure the required development environment is present in the student's machines.
+
+* Resources:
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/02-inversion-of-control-and-dependency-injection.adoc[Inversion of control and dependency injection] lecture note.  
+    ** Code examples developed during the lecture
+        *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-context/src/main/kotlin/pt/isel/daw/sketches/leic53d/lecture2
+        *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-context/src/test/kotlin/pt/isel/daw/sketches/leic53d/lecture2
+    ** Other examples
+        *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-context/src/main/kotlin/pt/isel/daw
+    ** Lab guide
+        *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/0-backend-development-environment.adoc
