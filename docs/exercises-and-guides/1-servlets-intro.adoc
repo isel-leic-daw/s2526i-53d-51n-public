@@ -1,16 +1,16 @@
 = Spring Boot introductory exercises
 
-* Consider the project [servlets](../../code/jvm/servlets).
+* Consider the project link:../../code/jvm/servlets[servlets].
 
 * Read the `ExampleServlet` and `ExampleFilter` classes, present in `Servlets.kt`
 
 * Run the `main` functions present in both `Jetty.kt` and `Tomcat.kt`.
 
 * In a shell with the `curl` tool _and_ using VSC with REST client _and_ using a browser
-    * Do a GET request to http://localhost:8080 and to http://localhost:8088
-    * Observe the response messages
-    * Observe the log messages for both `main` executions.
+    ** Do a GET request to http://localhost:8080 and to http://localhost:8088
+    ** Observe the response messages
+    ** Observe the log messages for both `main` executions.
 
 * Go through the `QUESTION` comments in the source files and try to answer them.
-    * Try to provide an answer before making the suggested changes.
-    * Check if the changed behaviour matches your original response.
+    ** Try to provide an answer before making the suggested changes.
+    ** Check if the changed behaviour matches your original response.
