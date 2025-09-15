@@ -1,4 +1,4 @@
-= Spring Boot introductory exercises
+= Servlets example
 
 * Consider the project link:../../code/jvm/servlets[servlets].
 
