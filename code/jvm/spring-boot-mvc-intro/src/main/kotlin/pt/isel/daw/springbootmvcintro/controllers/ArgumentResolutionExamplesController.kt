@@ -25,7 +25,7 @@ data class StudentInputModel(
 )
 
 @RestController
-@RequestMapping("examples-ar")
+@RequestMapping("examples/args")
 class ArgumentResolutionExamplesController {
     /**
      *  Binding path variables to arguments.
