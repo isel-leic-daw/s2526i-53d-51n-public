@@ -46,7 +46,7 @@
 * The link:https://jakarta.ee/specifications/servlet/[servlet] specification.
     ** Goals and historical context.
     ** The link:https://jakarta.ee/specifications/servlet/4.0/apidocs/javax/servlet/http/httpservlet[`HttpServlet`] abstract class and HTTP request handling.
-    ** The link:https://jakarta.ee/specifications/servlet/4.0/apidocs/javax/servlet/http/httpfilter[`HttpFilter] abstract class and the _filter pipeline_.
+    ** The link:https://jakarta.ee/specifications/servlet/4.0/apidocs/javax/servlet/http/httpfilter[`HttpFilter`] abstract class and the _filter pipeline_.
 
 * Introduction to the link:https://docs.spring.io/spring-framework/reference/web/webmvc.html[Spring MVC framework].
     ** Creating a base project using link:https://start.spring.io/[Spring Initializr].
@@ -63,8 +63,8 @@
 
 * Resources
     ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/servlets[Servlet example].
-    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/springmvcleic53d[example created during the lecture].
-    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-boot-mvc-intro[more complete Spring MVC usage example]. 
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/springmvcleic53d[Example created during the lecture].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-boot-mvc-intro[More complete Spring MVC usage example]. 
 
 == Lecture 4 - 2025-09-18
 
@@ -79,6 +79,6 @@
     ** Handler interceptors and their comparison with servlet filters.
 
 Resources:
-    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/springmvcleic53d[example created during the lecture].
-    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-boot-mvc-intro[more complete Spring MVC usage example]. 
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/springmvcleic53d[Example created during the lecture].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-boot-mvc-intro[More complete Spring MVC usage example]. 
 
