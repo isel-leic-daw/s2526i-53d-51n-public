@@ -32,3 +32,45 @@
         *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-context/src/main/kotlin/pt/isel/daw
     ** Lab guide
         *** https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/0-backend-development-environment.adoc
+
+== Lecture 3 - 2025-09-15
+
+* The link:https://jakarta.ee/specifications/servlet/[servlet] specification.
+    ** Goals and historical context.
+    ** The link:https://jakarta.ee/specifications/servlet/4.0/apidocs/javax/servlet/http/httpservlet[`HttpServlet`] abstract class and HTTP request handling.
+    ** The link:https://jakarta.ee/specifications/servlet/4.0/apidocs/javax/servlet/http/httpfilter[`HttpFilter] abstract class and the _filter pipeline_.
+
+* Introduction to the link:https://docs.spring.io/spring-framework/reference/web/webmvc.html[Spring MVC framework].
+    ** Creating a base project using link:https://start.spring.io/[Spring Initializr].
+        *** The generated Gradle build script and its plugins and dependencias.
+    ** Application start.
+    ** Controllers and handlers
+        *** Mapping between requests and handlers.
+        *** Handler parameters and the providing arguments for them.
+
+* Resources
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/servlets[Servlet example].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/springmvcleic51n[example created during the lecture].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-boot-mvc-intro[more complete Spring MVC usage example]. 
+
+== Lecture 4 - 2025-09-18
+
+* Presentation of the semester project.
+    ** Goals and requirements.
+    ** Guidance on how to start the design and development.
+
+* Laboratory - 
+    * link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/1-servlets-intro.adoc[Servlets example].
+    * link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/2-spring-boot-intro.adoc[Spring Boot introductory exercises].
+
+* Continuing the study of the link:https://docs.spring.io/spring-framework/reference/web/webmvc.html[Spring MVC framework].
+    ** Overview of the Spring MVC organization with interceptors, argument providers, message converters, controllers, and handlers.
+    ** Handler parameters and the providing arguments for them.
+        *** Creating a custom argument resolver.
+    ** Handler return types and mapping or their values into HTTP responses.
+        *** Automatic JSON serialization.
+    ** Handler interceptors and their comparison with servlet filters.
+
+Resources:
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/springmvcleic51n[example created during the lecture].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-boot-mvc-intro[more complete Spring MVC usage example]. 
