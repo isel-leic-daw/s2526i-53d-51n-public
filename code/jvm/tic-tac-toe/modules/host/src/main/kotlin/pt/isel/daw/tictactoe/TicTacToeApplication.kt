@@ -3,6 +3,7 @@ package pt.isel.daw.tictactoe
 import kotlinx.datetime.Clock
 import org.jdbi.v3.core.Jdbi
 import org.postgresql.ds.PGSimpleDataSource
+import org.slf4j.LoggerFactory
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
@@ -61,6 +62,9 @@ class PipelineConfigurer(
     }
 }
 
+private val logger = LoggerFactory.getLogger("main")
+
 fun main(args: Array<String>) {
+    logger.info("Starting app")
     runApplication<TicTacToeApplication>(*args)
 }
