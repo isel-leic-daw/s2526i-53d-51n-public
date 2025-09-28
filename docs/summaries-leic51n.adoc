@@ -74,3 +74,33 @@
 Resources:
     ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/springmvcleic51n[Example created during the lecture].
     ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/spring-boot-mvc-intro[More complete Spring MVC usage example]. 
+
+== Lecture 5 - 2025-09-22
+
+* Backend application software organization.
+    ** Grouping the types and functions into: repository group, services group, domain group, and HTTP group.
+    ** Group characterization
+        *** Dependencies between groups.
+        *** Functions with and without side-effects.
+        *** Technological dependencies with JDBC/JDBI and Spring MVC.
+        *** Data models.
+
+* Resources
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/04-backend-code-organization.adoc[Backend Code organization].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/05-development-environment-and-practices.adoc[Development Environment and Practices].
+
+== Lecture 6 - 2025-09-25
+
+* Laboratory - link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/3-backend-code-organization.adoc[Code organization and tests].
+
+* Continuing the previous lecture - Backend application software organization.
+    ** HTTP group:
+        *** Use of input and output models.
+        *** Centralization of path handling - handler mapping and URI generation.
+    ** Service group:
+        *** Using the `Either` sealed hierarchy to represent success and non-success.
+        *** Interaction with repositories and transaction boundaries.
+
+* Resources
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/3-backend-code-organization.adoc[Lab - Code organization and tests].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/tic-tac-toe[tic-tac-toe project]. 
