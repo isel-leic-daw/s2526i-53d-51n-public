@@ -404,4 +404,4 @@ The workflow execution is composed by a _job_ with the identifier `build` and th
 * Running the `check` Gradle task. If this task fails, then the  work flow also fails.
 
 By default workflow failures result in the sending of emails to all the project participants.
-The workflow results can also be seen in the GitHub web interface (e.g. link:https://github.com/isel-leic-daw/s2425i-51d-51n-public/actions[https://github.com/isel-leic-daw/s2425i-51d-51n-public/actions].)
+The workflow results can also be seen in the GitHub web interface (e.g. link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/actions[https://github.com/isel-leic-daw/s2526i-53d-51n-public/actions].)
