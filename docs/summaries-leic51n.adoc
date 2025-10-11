@@ -60,8 +60,8 @@
     ** Guidance on how to start the design and development.
 
 * Laboratory - 
-    * link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/1-servlets-intro.adoc[Servlets example].
-    * link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/2-spring-boot-intro.adoc[Spring Boot introductory exercises].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/1-servlets-intro.adoc[Servlets example].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/2-spring-boot-intro.adoc[Spring Boot introductory exercises].
 
 * Continuing the study of the link:https://docs.spring.io/spring-framework/reference/web/webmvc.html[Spring MVC framework].
     ** Overview of the Spring MVC organization with interceptors, argument providers, message converters, controllers, and handlers.
@@ -103,4 +103,70 @@ Resources:
 
 * Resources
     ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/3-backend-code-organization.adoc[Lab - Code organization and tests].
-    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/tic-tac-toe[tic-tac-toe project]. 
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/jvm/tic-tac-toe[tic-tac-toe project].
+
+== Lecture 7 - 2025-09-19
+
+* API types and evolution
+    ** In-process APIs vs remote APIs.
+    ** Versioning in-process APIs and remote APIs.
+    ** Client type scenarios: single client, multiple client, intra-organization vs inter-organization, lifetime.
+    ** Multiple implementations of the same API.
+
+* API functionality types
+    ** Distribution of domain logic between the frontend and the backend.
+
+* Resources
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/06-api-types-slides.pdf[API Types and Evolution].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/07-the-architecture-of-the-web.adoc[The architecture of the World Wide Web].
+
+== Lecture 8 - 2025-10-02
+
+* Review of the HTTP protocol.
+    ** Resources, URI, and messages.
+    ** Messages composition: methods and target URIs, status code, metadata, payload.
+    ** The _uniform interface_ concept.
+    ** Request method and status code semantics.
+    ** Ensuring the HTTP protocol requirements.
+    ** Taking advantage of the HTTP protocol application-level functionalities, such as content negotiation.
+    ** Recognizing the limits of the HTTP protocol.
+
+* Supporting the project development.
+
+* Resources
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/08-the-http-protocol.adoc[HTTP - Hypertext Transfer Protocol].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/09-the-http-protocol-slides.pdf[HTTP - slides].
+
+== Lecture 9 - 2025-10-06
+
+* Representation design
+    ** Representing non-success and the link:https://www.rfc-editor.org/rfc/rfc9457.html[RFC 9457Problem Details for HTTP APIs] RFC.
+        *** The standard `type`, `title`, `detail`, and `instance` fields.
+        *** Extensibility
+
+* Resources
+    ** link:https://www.rfc-editor.org/rfc/rfc9457.html[RFC 9457Problem Details for HTTP APIs].
+
+== Lecture 10 - 2025-10-09
+
+* Analysis of the link:https://docs.github.com/en/rest[GitHub API]
+    ** Home resource.
+    ** Usage of URIs and URI templates in the representations.
+    ** Representation of lists.
+    ** Usage of links and the link:https://www.rfc-editor.org/rfc/rfc8288.html[Web Linking] RFC.
+
+* The Internet Assigned Number Authority (IANA)
+    ** The link:https://www.iana.org/assignments/link-relations/link-relations.xhtml[IANA Link Relation Registry].
+    ** The link:https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml[IANA HTTP Status Code Registry].
+
+* Supporting the project development.
+
+* Resources
+    ** link:https://docs.github.com/en/rest[The GitHub API].
+    ** link:https://www.rfc-editor.org/rfc/rfc8288.html[RFC 5988 - Web Linking].
+    ** link:https://www.iana.org/assignments/link-relations/link-relations.xhtml[The IANA Link Relation Registry].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/lecture-notes/10-http-api-design-guidelines.adoc[HTTP API design guidelines].
+
+== Extra lecture - 2025-10-11
+
+* Supporting the project development.
