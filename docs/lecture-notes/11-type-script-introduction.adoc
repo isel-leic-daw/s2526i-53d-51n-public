@@ -1,0 +1,174 @@
+= A very succinct introduction to TypeScript
+
+== Introduction
+
+This document contains a set of introductory examples on the TypeScript type system.
+These examples are also present in the following link:https://www.typescriptlang.org/play/?#code/PTAEF51AFAnBLAtvALvAbgU1CgngB0wGcAoEgYwHsA7IlUAQwGUUFqBzALlDrfYlAByABaYANmMqCKNOowByAV0QAjTLG7Vla2AIAsAJgB0ABhm16DAEKVKYzA2rcVt+44GtFmEgDNF1cjQaRgATEIAKAA9NbXUAGlBcTi1VdQBKGNTdAG8SUFBYTBRFWGpQSNAAakSSAF8yEAgoAGFKRHxKIlRsPEJSEkbIKABBWFgGXBwCYjIqC0YWPlHxpNBliYAeXngOAD4BAG0RcUlBBMEAd0pYMRDBAF1zOQYlLPXV942UnX2oA5MEgBGBIGR5zZ7Ud4AeR80J8ix27CI3E+n22e1+oAOR1EEik5yuNzu9wSRzsAEOzkJEP4QlJ7o8BmAhqAACqKfD2KZ9WaySyvHTQBjwDRY77xUDi2D3Q7A0Cgp6WBEcYbUEIC9RCkXcA7o9gJKUyv4AIhomGNILBfMYrIQnMwOr1BtisASLjsDmoRqxpuo5pBCU8mEZg0goAAYv5AvBgr0ZorQPAiPIaPJMOwGGgsNxwjt8IoUJkdGkIPt3W4ylBUKXE-RdlAzEymlAAKrUGNlOP9cH8l1Q2DKriSl2gAA+PFYiIExtxkmNCcclBQolgGtg-cHRfUY4nfAEBgazLDUJUACtMIFufGe4wxPByA7QNlqAxEI+nZKVKKpbUBLl8i+b7cIIwx3g+Zx5J+oqAgYADMehxHUh5NKAaYXFeoAhJgPg7KgHb9HGoAsIoWHUPQUDZJKr7vpOHAANxQVuuj1DeLgqNwxGkeRT6QYBj6CDYKgQQBX7cDBsEAKyIfUJCEWuG60fwUBSjueoJtQnSAtw8kDop06zpQ843hpRAGNpfa6XuUCGKAyFhosiiBCUDBiBhRC4HQmCIGQhGstMDlOeMEi4AAklx94uaylDDJxmBkX+VFAbuiIMdQonDlkoC1HRCY+LY3B+YQAXFEFYiheF5CRdFsXxVALn3pgOW+FGQRlEmACi7R4Lm1D5oWT72Bwy7JC6tQZKA5aejx+SFCVbW9QWRiDewy7NqAZj1B1XW4OExoMMlHDGmkJBbfg3XGkdJ1EJ1Z07QcgL3Mdp3dQcj1Nu1ABKH1Qh9ibXdt4SAsdTZhgA4nF6j3leBHTDAhQhBFKCYBsrKYj1fUFSW4Blq4noJkmUJhNwcCYAjlVI18LqYn4AStejBYlv+BRFCUZRrkYSYhWR6bqPTKAlgAZALiYLfQACk8prYCSEg1AhXYC+YyUBciLIXJFmDgIKnjmpNPRsEdJMG0RTCIi4R8dwH7oC5XjmVkCl8IzkHwD44RxpQPigNbYheGtgh6oITv5PkjQ7DgptEBN4wBMIoAAAZ5gWcegMIDCR4Rcd6snAC04dJn9oCVRIpMYYrsDK6rwfM3N8cACTPtRv5QMa9fe14tTGnHkG-uIRDYEzIdgGHy751+jjkLHCei8nqfp7DcdSjneeR-nRf2CEpcMErKscJBM0s6UdcN2+TegPXACymbCEY5e0uEbeYGktRd-k9S-nZUAADLdEF0M+bDH0S7N3hsaWyjQADq2At7YCwjhdsHBGBCDjIIRgapJRLkQQ-UA1wvZb3gAwFQ9gjBgLAKyUQ2DqBlVAB0IgXRCHYCwXlXQAB9B+RBmHYM9iPOehAC7GhAUYJsN4qCSFFIAjezdCFeFAbnXoU51Dl1gAmER1xuDiOnCA-+vC4BIC3rgVooiNGk1AeOY07BChxRMaAY0UjzQf1AAAESTOQBAyAXxIw3v4fCWjsDhiKBPQBRBFBiG4iQcclEADWOwQjAT9CgQkETs4KOuFSZJop2pK1gPUcJoAolqmAsIFAKB8DZ0KEQDotBMBUjoJmRQyIMo6BknrVqmFooaWXOoMhZsynBP6n4lAATiC9KDjwFWAzY7hB6SEoweSQgjPyJVPuQg4kJKSZkwQ3AB7B0aIRMuysS4oEoE+WZ3BjQrOuIktJFpQBpO4BkxR9Qq4LNkB6JalB2CTKGdMtJRg3y0IYOwR+OUnlRwcBE4FwdHnB0WdgEQRSSllIqX3DZ00nk7Nhnsi4ByjnZBOdYwpxTSnECRf6CctT6k-j3tCl5RDJAfKmSgIwNTihEDSBCquX4wXsqyt3GWoZQBcyRrAPu+tOzTH6I0EKXCVxQMKKALxsZxUJGgeHdQUCxBECOTsIVIqWldgAPyyVhgACTTp-OKK1Y4UWWsNBp6h6iEWaI4JgpsfDcWyEQV1-VwhY32OgSg8AQgOthk66gLqXYoFVCEU1RBzVDStaAGNcbLWgGFqG8NbreTzAYFpUA6avVRqTRa1afxBAMCpIIISjxGifW+r9G8RBc35ojYWs1xaE1lqEiQIAA[TypeScript Console].
+
+== Primitive types
+
+[#primitive-types, typescript]
+----
+const aString: string = 'hello'
+const aNumber: number = 42.0
+const aBoolean: boolean = true
+function add(x: number, y:number): number {
+  return x + y
+}
+----
+
+* Note how type annotations (i.e. the `: string` part) can be added to variables, function parameters, and function returns.
+
+== Composite types
+
+=== Array types
+
+[#array-types, typescript]
+----
+const aStringArray: Array<string> = ['hello', 'world']
+const aNumberArray: Array<number> = [0, 1, 2]
+const anArrayOfArrayOfStrings: Array<Array<string>> = [['hello', 'world'], ['olá', 'mundo']]
+----
+
+=== Tuple types
+
+[#tuple-types, typescript]
+----
+const aNumberPair: [number, number] = [1, 2]
+const aStringAndNumberPair: [string, number] = ["one", 2]
+const aTriple: [string, number, boolean] = ["one", 2, true]
+----
+
+=== Function types
+
+[#function-types, typescript]
+const isNonNegative: (input: number) => boolean = it => it >= 0
+
+=== Union types
+
+[#union-types, typescript]
+----
+const aNumberOrString: number | string = "hello"
+const anotherNumberOrString: number | string = 2
+----
+
+=== Object types
+
+[#object-types, typescript]
+----
+const alice: {name: string, nbr: number} = {
+  name: 'Alice',
+  nbr: 1234,
+}
+----
+
+== New type definitions
+
+[#new-type-definitions, typescript]
+----
+type Student = { name: string; nbr: number }
+const bob: Student = {
+  name: 'Bob',
+  nbr: 1235,
+}
+
+type NumberOrString = number | string
+const nos1: NumberOrString = "hello"
+const nos2: NumberOrString = 42 
+----
+
+== Structural type system
+
+[#structural-type-system, typescript]
+----
+type TypeStructurallyIdenticalToAStudent = { name: string; nbr: number };
+const foo: TypeStructurallyIdenticalToAStudent = alice;
+
+function isEmpty(input: {length:number}): boolean {
+  return input.length === 0
+}
+isEmpty("a string")
+isEmpty("")
+isEmpty([1])
+isEmpty([])
+// ERROR isEmpty(1)
+----
+
+* The type name is not relevant. What matters for type checking is the type structure.
+
+== Generic types
+
+[#generic-types, typescript]
+----
+type Predicate<T> = (input: T) => boolean
+const isOdd: Predicate<number> = function(input) {
+  return Number.isInteger(input) && input % 2 === 1
+}
+----
+
+== Type narrowing
+
+[#type-narrowing, typescript]
+----
+type NumberOrString = number | string
+function doSomething(name: string, value: NumberOrString) {
+  if(typeof value === 'string') {
+    // in this branch `input` has type `string` - this is called type narrowing
+    return `${name} = "${value}"`
+  } else {
+    // in this branch `input` has type `number` - this is called type narrowing
+    return `${name} = ${Math.round(value)}`
+  }
+} 
+----
+
+== Literal types
+
+[#literal-types, typescript]
+----
+type Red = "red" 
+// We are defining a 'type' and not a value or variable. 
+// The only possible value for _values_ of this type is "red".
+// const color: Red = "blue" - typing error
+const color: Red = "red"
+
+type PrimaryColor = "red" | "green" | "blue"
+----
+
+== Discriminated union types
+
+[#discriminated-unions, typescript]
+----
+// Discriminated union types
+type FetchResult = 
+| { kind: 'network-error', error: Error}
+| { kind: 'http-response', status: number}
+
+function doAnotherThing(result: FetchResult) {
+  switch (result.kind) {
+    case 'network-error': {
+      // type narrowed to {kind: "network-error", error: Error}
+      console.log(result.error.message);
+      break;
+    }
+    case 'http-response': {
+      // type narrowed to {kind: "http-response", status: number}
+      console.log(result.status);
+      break;
+    }
+  }
+}
+----
+
+== Intersection types
+
+[#intersection-types, typescript]
+----
+// If there are union types, are there also intersection types?
+type HasLength = {length: number}
+type CanShift = {shift: () => void}
+type CanShiftAndHasLength = HasLength & CanShift
+
+const a1: CanShiftAndHasLength = ['a', 'b']
+// ERROR const s1: CanShiftAndHasLength = 'ab'
+----

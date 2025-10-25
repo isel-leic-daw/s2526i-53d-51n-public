@@ -178,3 +178,39 @@ Resources:
 == Extra lecture - 2025-10-09
 
 * Supporting the project development.
+
+== Lecture 11 - 2025-10-13
+
+* No lecture.
+
+== Lecture 12 - 2025-10-16
+
+* No lecture
+
+== Lecture 13 - 2025-10-20
+
+* Student presentations - first phase of the course project.
+
+* Introduction to the TypeScript language
+    ** Context and motivation.
+    ** Type checking and type erasure.
+    ** The TypeScript type system and type checking.
+        *** Primitive types.
+        *** Array types.
+        *** Object types.
+        *** Structural type systems vs. nominal type systems. Anonymous types.
+        *** Function types.
+        *** Type annotations on variables, constants, function parameters and function return.
+        *** Literal types
+        *** Union types. Union types with discriminators.
+
+* Resources
+    ** link:https://www.typescriptlang.org/play/?#code/PQKgUAKgngDgpgZQMYCcCWMAuAuMBaAAgGEU4BDTOAEwICMoCBZNVAewGdWAzTfAgQSpV2BTLDgE0AOy6sUAWwppWUgitGsYBAFJkAbmWTosYAgULR4BJAAs4SANbSA5gSoBXdFNdU4euAA2mvJwUpiiaCGmZuYEAKIAdM4JBACSACJxYCDAYGDAwAQAvAQACujyaJho-qLi7HkBcOFkAHLu8rRwKNgEUh1dKGBtA93FBACM+YVxAEqzAPKzBCOdYyUARBMbYE0tCJhezr3shy7DB0fjWzsF8fNLK5cu41OGZ94JmKwAqjDwKCIZHYcAAFABKab3RbLd5XQpw853OaLFArdprFBfX7-bpAkEQ3bNFYAIVYrCaZCkvVo5MpqhKh3ccDyXHcUiQ1XUZCEoIAHr1+piADQEKCC0YocGgSQybqkGjAvqSgg5AgAb2ipEwnlUfIIAGoxWAAL7DXkTUUAJkhyIesItoo2Vo2tpm9usKlOKykrEwdhQz28Jw+rhKPKooMtNryd3DKBQZAYYngDSQXpaUn4CaTvWziagAB5TkcAHzjADaGzsASCGydAHc5AEqBsALrDLM5qAVgAMbexfwB+LBkPTUm9VPzSYWXGn4oE3cL8+LodL5ZKFarNbrjebrbboqrFIAh-WCBt5OyqKx2x2oYz3DAmmmM+jJaUyGgegQK0LBqK-7dG2laWgQVoduOk4YoM-BSFQQbOJ+369H+kqiiWLggZuYEbKe7ZgFBLQQMYTSoUBKAYaGoq0hS5BSNhv64Tut6ikycD3nGBBshyXKqCmcANHskjsAsQi9KC0gwO4ODKpi4LFOWtH0mAaCiUI4w8ZyyhSJJUjSZgCmamY2q6rKBkEAApOBxQlFMZoPgQ7I6XUqZEuEFELIGoYSpiBAAD4EJh3hgJ53lXJsLE7GFiHjFaUIoo8MWhuM7FgFpfHcRCvmDAFQUpcZog2CgrANn0cBlXECZyISZrJRFWVutCSWSl5iGDrigLAqOeRoFwoICdwcmDG1KVFONF7Bc4roatEdwCX0ZDVQ2Lghkc0T1S4HXDt1tUEIEIKzWY83iIty2rcN3Qba14UvIU8UOVxrC0AAVvY4QCa+E4tAELBwL06pSGQIRrS4gG0D+FEmuMhVAyDF78L9SBwPWG0Q70ExWgAzAALAArMKpqxoUjKnb4XDSFUOkNAtBzuL4YQw3D-35Uc4OQ+hnqeCCoPeGaRF0M9vR0wz4QlLDwMsxsZK0KjZhSOj4G43jABshNmOm3NSwAMnEqREDsDm06GXkwesrMvIFFGEW+nAhEQGbCybKBm2ikWBHWxPjJc7icp4ZABAQlgSAgUCnHA8gEHoIitKwlRA4HwcEKH4fyHkC1xKc9NUpQTOS7zzjszl3T82+SBLRSTv06EYtHYt8MbECJUBHLfSK8rKtq9EmsoDzF6MHrBtEwLgk6lQOcs5nY8T+M5fNwlHoC1notV6L4yj9nYQsmAC0QOQtjmxL8NTerbccyK3esFrAD8BdEzb31uPoaBUL0e9kAfbt18zvQbOkz+tlPgrH8VpCYORHvSOQb994BhhhtfOF44iQJQK3YBvRQGXy1r-XW+tDZ5AFrIVgvQp6b1ziUQI9E5BexKNrKo3QA6uUEunU6sxqDXAVDsAWSAJi9FYTQTYHCd6nXKJEKm-gHZBE8Ow6gGw8obGcKQUIsjAobFoAEZknCy5Wl6CIyo1RxEUivl-VR6iUYLxhJ6R+SAsY6IqGIuAEijHXCgB7UqOxHLpDUqgURQNKA0B+FIamzCrAADFmi2FYewdwARa5gECuqASv95RyHPCEdg7AyDOBZiffa1UfxVRKigM08TEkXlIOwGAXoUZUQoO4dgDtfDFyKaydk2l1BcHCTYbKBAwmYAiYJaJ4RCr+hKmVKQFV4h5Nqi03iLkbBUioE0Xp-SokxNBOUwZvRlk2EiYMoy0R2ArT6V0jZMSvjiH2TEaw3ULzJJQbgK5JkBlnLSRkrJ0QrmnMwAkO5HyYh2gsV8hIpxan1NYL4P5ZgIbkAcH88uh0NjlMqROFGDzHlApBTqMFELHkEABY8IFrzMkslxdCsgsKzBmgcvM+CSzOm7LWR045EJISOVSFvXu70XKfWCRIAAEsCbWoRnD+hhk0bw-omml0fgKAgAr2BColTYa4dsJBTU0Y-Bc8rFUiuVThe8C15UQBxDtQ64tvhDjxN1CSCkijlimtK70fIeFyuBMay1XUzWTTjmq0Mtx3QWIFlAF1RqTVWq9RWCYBrTrauFf6OCVB3WdRHOMWNSqCAADJXXsCTaalkAsABevQ026oTbm8NEhNiqott4HYQA[TypeScript Playground].
+
+    ** link:./lecture-notes/11-type-script-introduction.adoc[Lecture Note - A very succinct introduction to TypeScript].
+
+    ** link:https://www.typescriptlang.org/docs/handbook/intro.html[The TypeScript Handbook].
+ 
+== Lecture 14 - 2025-10-23
+
+* Student presentations - first phase of the course project.
