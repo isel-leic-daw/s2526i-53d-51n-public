@@ -214,3 +214,29 @@ Resources:
 == Lecture 14 - 2025-10-23
 
 * Student presentations - first phase of the course project.
+
+== Lecture 15 - 2025-10-27
+
+* Laboratory class about browser application and the Typescript language
+    ** link: https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/5-browser-application-loading.adoc[Browser Application Loading].
+    ** link: https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/6-typescript-introductory-exercise.adoc[TypeScript Introductory Exercise].
+    ** link: https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/7-typescript-createElement.adoc[TypeScript `createElement` Function].
+
+== Lecture 16 - 2025-10-30
+
+* Introduction to the development of applications for the browser.
+    ** Loading of HTML representations.
+    ** Loading of JavaScript scripts.
+        *** Non-module scripts vs. module scripts.
+    ** The ESM (ECMAScript Module) link:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules[module system].
+    ** Module loading and initialization performed by the browser.
+    ** Using TypeScript and the associated translation to JavaScript.
+    ** Using NPM packages.
+    ** The link:https://vite.dev[Vite build tool].
+        *** HTTP server to serve the application resources
+        *** TypeScript compilation into JavaScript.
+        *** Package bundling and adaptation for browser execution.
+
+* Resources
+    ** link:https://vite.dev/guide/[Vite - Getting Started].
+    ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/js/js-intro-leic53d[js-intro-leic53d].

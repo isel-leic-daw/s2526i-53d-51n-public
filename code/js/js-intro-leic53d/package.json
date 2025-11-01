@@ -1,0 +1,18 @@
+{
+  "name": "js-intro-leic53d",
+  "version": "1.0.0",
+  "main": "add.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12"
+  },
+  "dependencies": {
+    "url-template": "^3.1.1"
+  }
+}
