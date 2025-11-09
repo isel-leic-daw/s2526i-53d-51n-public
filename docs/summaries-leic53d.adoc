@@ -240,3 +240,30 @@ Resources:
 * Resources
     ** link:https://vite.dev/guide/[Vite - Getting Started].
     ** link:https://github.com/isel-leic-daw/s2526i-53d-51n-public/tree/main/code/js/js-intro-leic53d[js-intro-leic53d].
+
+== Lecture 17 - 2025-11-03
+
+* Laboratory class about the React library
+    ** link:exercises-and-guides/8-react-introduction.adoc[React introduction].
+
+* An introduction to the React library.
+    ** Build process and the compile and runtime dependencies.
+    ** React elements and the JSX syntax.
+    ** The React _virtual_ DOM vs the browser's _real_ DOM.
+    ** React components and React elements.
+
+* Resources
+    ** link:exercises-and-guides/8-react-introduction.adoc[React introduction].
+
+== Lecture 18 - 2025-11-06
+
+* Continuing the study of the React library.
+    ** Components with state and the `userState` function.
+    ** State management por component mount and observed state.
+    ** React hook rules.
+    ** Reducers and the `useReducer` hook function.
+
+* Resources
+    ** link:../code/js/react-intro-leic51n[Introductory react examples based on the introductory guide].
+    ** link:https://react.dev/reference/react/useState[`useState` function].
+    ** link:https://react.dev/reference/react/useReducer[`useReducer` function].

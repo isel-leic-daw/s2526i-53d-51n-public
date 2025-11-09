@@ -235,3 +235,31 @@ Resources:
     ** link: https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/5-browser-application-loading.adoc[Browser Application Loading].
     ** link: https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/6-typescript-introductory-exercise.adoc[TypeScript Introductory Exercise].
     ** link: https://github.com/isel-leic-daw/s2526i-53d-51n-public/blob/main/docs/exercises-and-guides/7-typescript-createElement.adoc[TypeScript `createElement` Function].
+
+== Lecture 17 - 2025-11-03
+
+* An introduction to the React library.
+    ** Build process and the compile and runtime dependencies.
+    ** React elements and the JSX syntax.
+    ** The React _virtual_ DOM vs the browser's _real_ DOM.
+    ** React components and React elements.
+
+* Resources
+    ** link:exercises-and-guides/8-react-introduction.adoc[React introduction].
+
+== Lecture 18 - 2025-11-06
+
+* Continuing the study of the React library.
+    ** Components with state and the `userState` function.
+    ** State management por component mount and observed state.
+    ** React hook rules.
+
+* Laboratory class about the React library
+    ** link:exercises-and-guides/8-react-introduction.adoc[React introduction].
+
+* Resources
+    ** link:exercises-and-guides/8-react-introduction.adoc[React introduction].
+    ** link:../code/js/react-intro-leic51n[Introductory react examples based on the introductory guide].
+    ** link:https://react.dev/reference/react/useState[`useState` function].
+    ** link:https://react.dev/reference/react/useReducer[`useReducer` function].
+    
