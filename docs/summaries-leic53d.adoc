@@ -258,7 +258,7 @@ Resources:
 == Lecture 18 - 2025-11-06
 
 * Continuing the study of the React library.
-    ** Components with state and the `userState` function.
+    ** Components with state and the `useState` function.
     ** State management por component mount and observed state.
     ** React hook rules.
     ** Reducers and the `useReducer` hook function.
@@ -267,3 +267,27 @@ Resources:
     ** link:../code/js/react-intro-leic51n[Introductory react examples based on the introductory guide].
     ** link:https://react.dev/reference/react/useState[`useState` function].
     ** link:https://react.dev/reference/react/useReducer[`useReducer` function].
+
+== Lecture 19 - 2025-11-10
+
+* Laboratory class about state management and component communication in the React library.
+    ** link:exercises-and-guides/8-react-state.adoc[Exercise on React state management].
+
+* An introduction to React component effects and the `useEffect` hook function.
+
+* Resources
+    ** link:exercises-and-guides/8-react-state.adoc[Exercise on React state management].
+    ** link: https://react.dev/reference/react/useEffect[The `useEffect` hook function].
+    ** link:../code/js/react-intro[React examples].
+
+== Lecture 20 - 2025-11-13
+
+* Continuing the study of the React library.
+    ** Components with state and the `useState` function.
+    ** Communication between components
+    ** Reducers and the `useReducer` hook function.
+    ** React context.
+
+* Resources
+    ** link:../code/js/react-intro[React examples].
+
