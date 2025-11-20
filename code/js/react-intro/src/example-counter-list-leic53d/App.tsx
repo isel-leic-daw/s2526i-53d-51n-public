@@ -1,7 +1,10 @@
-import { CounterList } from './CounterList'
+import { CounterList } from "./CounterList";
+import { ExampleContextProvider } from "./ExampleContextProvider";
 
 export function App() {
-    return (
-        <CounterList />
-    )
+  return (
+    <ExampleContextProvider>
+      <CounterList />
+    </ExampleContextProvider>
+  );
 }
