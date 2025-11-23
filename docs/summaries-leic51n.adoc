@@ -275,4 +275,23 @@ Resources:
 * Continuing the study of the React library.
     ** React context.
     ** React component effects and the `useEffect` hook function.
+
+== Lecture 21 - 2025-11-17
+
+* Continuing the study of React state management via context.
+* The browsers' link:https://developer.mozilla.org/en-US/docs/Web/API/History[`history` Web API].
+* Single Page Applications (SPA) and client-side routing.
+* The link:https://reactrouter.com/[React Router] library.
+    ** Introduction to the basic concepts of:
+        *** routes, router, router provider, inner router and outlets, and links.
+
+* Resources
+    ** link:../code/js/react-intro[React examples].
+
+== Lecture 22 - 2025-11-20
+
+* Analysis of an example comprising React state management via reducers and context and React Router navigation features.
+
+* Resources
+    ** link:../code/js/react-intro[React examples].
     
