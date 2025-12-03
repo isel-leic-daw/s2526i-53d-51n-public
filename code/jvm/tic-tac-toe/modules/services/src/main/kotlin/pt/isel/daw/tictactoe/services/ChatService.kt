@@ -12,10 +12,12 @@ import java.util.concurrent.locks.ReentrantLock
 import kotlin.concurrent.withLock
 
 @Named
-class ChatService : NeedsShutdowm {
+class ChatService : NeedsShutdown {
     // Important: mutable state on a singleton service
-    private val listeners = mutableListOf<EventEmitter>()
+    private val emitters = mutableListOf<EventEmitter>()
     private var currentId = 0L
+
+    private var closing = false
     private val lock = ReentrantLock()
 
     // A scheduler to send the periodic keep-alive events
@@ -26,22 +28,30 @@ class ChatService : NeedsShutdowm {
 
     override fun shutdown() {
         logger.info("shutting down")
+        lock.withLock {
+            closing = true
+            val id = currentId++
+            sendEventToAll(Event.Message(id, "bye"))
+            emitters.forEach {
+                it.complete()
+            }
+        }
+
         scheduler.shutdown()
     }
 
-    fun addEventEmitter(listener: EventEmitter) =
+    fun addEventEmitter(emitter: EventEmitter) =
         lock.withLock {
-            logger.info("adding listener")
-            listeners.add(listener)
-            listener.onCompletion {
+            logger.info("adding emitter")
+            emitters.add(emitter)
+            emitter.onCompletion {
                 logger.info("onCompletion")
-                removeListener(listener)
+                removeEmitter(emitter)
             }
-            listener.onError {
+            emitter.onError {
                 logger.info("onError")
-                removeListener(listener)
             }
-            listener
+            emitter
         }
 
     fun sendMessage(msg: String) =
@@ -51,23 +61,23 @@ class ChatService : NeedsShutdowm {
             sendEventToAll(Event.Message(id, msg))
         }
 
-    private fun removeListener(listener: EventEmitter) =
+    private fun removeEmitter(emitter: EventEmitter) =
         lock.withLock {
-            logger.info("removing listener")
-            listeners.remove(listener)
+            logger.info("removing emitter")
+            emitters.remove(emitter)
         }
 
     private fun keepAlive() =
         lock.withLock {
-            if (listeners.isEmpty()) {
+            if (emitters.isEmpty()) {
                 return@withLock
             }
-            logger.info("keepAlive, sending to {} listeners", listeners.count())
+            logger.info("keepAlive, sending to {} emitters", emitters.count())
             sendEventToAll(Event.KeepAlive(Clock.System.now()))
         }
 
     private fun sendEventToAll(event: Event) {
-        listeners.forEach {
+        emitters.forEach {
             try {
                 it.emit(event)
             } catch (ex: Exception) {

@@ -10,7 +10,7 @@ import pt.isel.daw.tictactoe.domain.users.AuthenticatedUser
 
 @Component
 class AuthenticationInterceptor(
-    private val authorizationHeaderProcessor: RequestTokenProcessor,
+    private val requestTokenProcessor: RequestTokenProcessor,
 ) : HandlerInterceptor {
     override fun preHandle(
         request: HttpServletRequest,
@@ -23,9 +23,14 @@ class AuthenticationInterceptor(
             }
         ) {
             // enforce authentication
+            val authorizationHeader = request.getHeader(NAME_AUTHORIZATION_HEADER)
             val user =
-                authorizationHeaderProcessor
-                    .processAuthorizationHeaderValue(request.getHeader(NAME_AUTHORIZATION_HEADER))
+                if (authorizationHeader != null) {
+                    requestTokenProcessor
+                        .processAuthorizationHeaderValue(authorizationHeader)
+                } else {
+                    requestTokenProcessor.processCookies(request.cookies)
+                }
             return if (user == null) {
                 response.status = 401
                 response.addHeader(NAME_WWW_AUTHENTICATE_HEADER, RequestTokenProcessor.SCHEME)

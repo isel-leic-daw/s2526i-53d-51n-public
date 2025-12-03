@@ -48,6 +48,10 @@ kotlin {
     jvmToolchain(21)
 }
 
+tasks.bootJar {
+    mainClass = "pt.isel.daw.tictactoe.TicTacToeApplicationKt"
+}
+
 /**
  * Docker related tasks
  */

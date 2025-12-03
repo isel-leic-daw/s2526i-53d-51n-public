@@ -35,4 +35,8 @@ class SseEmitterBasedEventEmitter(
     override fun onError(callback: (Throwable) -> Unit) {
         sseEmitter.onError(callback)
     }
+
+    override fun complete() {
+        sseEmitter.complete()
+    }
 }

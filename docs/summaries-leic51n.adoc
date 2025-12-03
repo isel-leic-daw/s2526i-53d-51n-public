@@ -292,6 +292,11 @@ Resources:
 
 * Analysis of an example comprising React state management via reducers and context and React Router navigation features.
 
+* Analysis of the `useFetch` custom hook for HTTP requests.
+    ** Visualization of asynchronous operations.
+    ** Interaction between the reducer-based state management and asynchronous operations.
+    ** HTTP request races and HTTP request cancellation.
+
 * Resources
     ** link:../code/js/react-intro[React examples].
     

@@ -1,5 +1,6 @@
 package pt.isel.daw.tictactoe.http
 
+import org.springframework.http.HttpHeaders
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -12,6 +13,7 @@ import pt.isel.daw.tictactoe.http.model.UserCreateInputModel
 import pt.isel.daw.tictactoe.http.model.UserCreateTokenInputModel
 import pt.isel.daw.tictactoe.http.model.UserHomeOutputModel
 import pt.isel.daw.tictactoe.http.model.UserTokenCreateOutputModel
+import pt.isel.daw.tictactoe.http.pipeline.RequestTokenProcessor
 import pt.isel.daw.tictactoe.services.TokenCreationError
 import pt.isel.daw.tictactoe.services.UserCreationError
 import pt.isel.daw.tictactoe.services.UsersService
@@ -21,6 +23,7 @@ import pt.isel.daw.tictactoe.utils.Success
 @RestController
 class UsersController(
     private val userService: UsersService,
+    private val requestTokenProcessor: RequestTokenProcessor,
 ) {
     @PostMapping(Uris.Users.CREATE)
     fun create(
@@ -49,9 +52,12 @@ class UsersController(
     ): ResponseEntity<*> {
         val res = userService.createToken(input.username, input.password)
         return when (res) {
-            is Success ->
+            is Success -> {
+                val responseCookie = requestTokenProcessor.createCookie(res.value)
                 ResponseEntity.status(200)
+                    .header(HttpHeaders.SET_COOKIE, responseCookie.toString())
                     .body(UserTokenCreateOutputModel(res.value.tokenValue))
+            }
 
             is Failure ->
                 when (res.value) {
@@ -62,8 +68,12 @@ class UsersController(
     }
 
     @PostMapping(Uris.Users.LOGOUT)
-    fun logout(user: AuthenticatedUser) {
+    fun logout(user: AuthenticatedUser): ResponseEntity<*> {
         userService.revokeToken(user.token)
+        val responseCookie = requestTokenProcessor.createDeletionCookie()
+        return ResponseEntity.status(204)
+            .header(HttpHeaders.SET_COOKIE, responseCookie.toString())
+            .build<Unit>()
     }
 
     @GetMapping(Uris.Users.GET_BY_ID)

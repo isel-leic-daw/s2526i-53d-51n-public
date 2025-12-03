@@ -6,4 +6,6 @@ interface EventEmitter {
     fun onCompletion(callback: () -> Unit)
 
     fun onError(callback: (Throwable) -> Unit)
+
+    fun complete()
 }

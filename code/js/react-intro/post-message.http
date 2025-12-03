@@ -1,0 +1,4 @@
+POST http://localhost:8180/api/chat/send
+Content-Type: text/plain
+
+Hello

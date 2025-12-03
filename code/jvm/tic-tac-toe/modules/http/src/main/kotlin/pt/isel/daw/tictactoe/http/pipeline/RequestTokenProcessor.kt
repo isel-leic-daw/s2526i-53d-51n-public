@@ -1,7 +1,11 @@
 package pt.isel.daw.tictactoe.http.pipeline
 
+import jakarta.servlet.http.Cookie
+import kotlinx.datetime.Clock
+import org.springframework.http.ResponseCookie
 import org.springframework.stereotype.Component
 import pt.isel.daw.tictactoe.domain.users.AuthenticatedUser
+import pt.isel.daw.tictactoe.services.TokenExternalInfo
 import pt.isel.daw.tictactoe.services.UsersService
 
 @Component
@@ -27,7 +31,45 @@ class RequestTokenProcessor(
         }
     }
 
+    fun processCookies(cookies: Array<Cookie>?): AuthenticatedUser? {
+        if (cookies == null) {
+            return null
+        }
+        val tokenCookies = cookies.filter { it.name == TOKEN_COOKIE_NAME }
+        if (tokenCookies.size != 1) {
+            return null
+        }
+        val tokenValue = tokenCookies.single().value
+        return usersService.getUserByToken(tokenValue)?.let {
+            AuthenticatedUser(
+                it,
+                tokenValue,
+            )
+        }
+    }
+
+    fun createCookie(tokenExternalInfo: TokenExternalInfo): ResponseCookie {
+        return ResponseCookie.from(TOKEN_COOKIE_NAME, tokenExternalInfo.tokenValue)
+            .httpOnly(true)
+            .secure(true)
+            .sameSite("Strict")
+            .path("/")
+            .maxAge(tokenExternalInfo.tokenExpiration.minus(Clock.System.now()).inWholeSeconds)
+            .build()
+    }
+
+    fun createDeletionCookie(): ResponseCookie {
+        return ResponseCookie.from(TOKEN_COOKIE_NAME, "")
+            .httpOnly(true)
+            .secure(true)
+            .sameSite("Strict")
+            .path("/")
+            .maxAge(0)
+            .build()
+    }
+
     companion object {
         const val SCHEME = "bearer"
+        const val TOKEN_COOKIE_NAME = "token"
     }
 }

@@ -14,6 +14,7 @@ export const AuthenticationContext = createContext<AuthenticationState>({ userna
  * Custom hook to access the authentication state
  * @returns a pair with the currently authentication user and a function to set it
  */
+// Custom Hook
 export function useAuthentication(): [string | undefined, (value: string | undefined) => void] {
   const state: AuthenticationState = useContext(AuthenticationContext);
 

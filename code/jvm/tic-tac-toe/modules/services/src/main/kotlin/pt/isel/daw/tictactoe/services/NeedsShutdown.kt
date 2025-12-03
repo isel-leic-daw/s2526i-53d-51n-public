@@ -1,5 +1,5 @@
 package pt.isel.daw.tictactoe.services
 
-interface NeedsShutdowm {
+interface NeedsShutdown {
     fun shutdown()
 }

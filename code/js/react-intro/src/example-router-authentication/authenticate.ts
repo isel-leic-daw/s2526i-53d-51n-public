@@ -7,8 +7,14 @@ function delay(delayInMs: number) {
   });
 }
 
-export async function authenticate(username: string, password: string): Promise<string | undefined> {
+export async function authenticate(
+  username: string, 
+  password: string
+): Promise<string | undefined> {
     await delay(2000);
+    if(username == 'carol') {
+      throw new Error("Carol is forbidden")
+    }
     if ((username == 'alice' || username == 'bob') && password == '1234') {
       return username;
     }
