@@ -299,4 +299,43 @@ Resources:
 
 * Resources
     ** link:../code/js/react-intro[React examples].
+
+== Lecture 23 - 2025-11-24
+
+* Server originated communication and the _Server-Sent Events_ (SSE) technique. 
+    ** The `text/event-stream` format.
+    ** Spring MVC support via the link:https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/servlet/mvc/method/annotation/SseEmitter.html[`SseEmitter` type].
+    ** Browser support via the the link:https://developer.mozilla.org/en-US/docs/Web/API/EventSource[`EventSource` type].
+    ** Example: a chat application.
+
+== Lecture 24 - 2025-11-27
+
+* Load balancing
+    ** Improving performance via horizontal scaling.
+    ** High availability by using multiple nodes.
+    ** Balancing policies, such as "round-robin".
+    ** Service discovery.
+        *** Using DNS for service discovery.
+    ** Retry policies.
+    ** Analysis of an example using link: https://www.nginx.com[nginx].
+
+== Lecture 25 - 2025-12-04
+
+* Testing browser-based applications via browser automation.
+    ** The link:https://playwright.dev/[Playwright] framework.
+    ** Example: testing a login form.
+
+* Supporting the project development
+
+== Lecture 26 - 2025-12-11
+
+* Supporting the project development
+
+== Lecture 27 - 2025-12-15
+
+* Project evaluations and discussions.
+
+== Lecture 28 - 2025-12-18
+
+* Project evaluations and discussions.
     
